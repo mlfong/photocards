@@ -26,7 +26,6 @@ const PHOTOCARDS: Photocard[] = [
 
 
 export class AppComponent {
-  title = 'app works!';
   photocards = PHOTOCARDS;
   selectedPhotocard: Photocard;
 
