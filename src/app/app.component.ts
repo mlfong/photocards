@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 
-export class Photocard {
-  id: number;
-  members: string[];
-  url: string;
-  photoset: string;
-  team: string;
-}
+import { Photocard } from './photocard';
+
 
 const PHOTOCARDS: Photocard[] = [
   {id: 1, members: ["Yamamoto Sayaka"], photoset: "Kimi wa Melody", team: "N",

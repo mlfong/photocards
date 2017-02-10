@@ -1,0 +1,9 @@
+<div *ngIf="photocard">
+  <h2>{{photocard.name}} details!</h2>
+  <div><label>id: </label>{{photocard.id}}</div>
+  <div>
+    <label>photoset: {{photocard.photoset}}</label>
+    <br />
+    <img src="{{photocard.url}}">
+  </div>
+</div>
