@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+    <h2>My Photocards</h2>
+    <ul class="photocards">
+      <li *ngFor="let photocard of photocards"
+        [class.selected]="photocard === selectedphotocard"
+        (click)="onSelect(photocard)">
+        <span class="badge">{{photocard.id}}</span> {{photocard.photoset}}
+      </li>
+    </ul>
+    <div *ngIf="selectedPhotocard">
+      <h2>{{selectedPhotocard.photoset}} details!</h2>
+      <div><label>id: </label>{{selectedPhotocard.id}}</div>
+      <div>
+        <label>photoset: {{selectedPhotocard.photoset}}</label> 
+        <br />
+        <!-- <input [(ngModel)]="selectedPhotocard.photoset" placeholder="photoset"/> -->
+        <img src="{{selectedPhotocard.url}}">
+      </div>
+    </div>
