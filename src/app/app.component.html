@@ -1,11 +1,25 @@
+
+
+<div class="left_side">
     <h2>My Photocards</h2>
+
+    <label>Member search</label>
+    <input #searchMemberInput (keyup.enter)="searchMember(searchMemberInput.value)"/>
+    <button (click)="searchMember(searchMemberInput.value); ">
+      Search
+    </button>
+    <button (click)="resetFilters();">
+      Clear searches
+    </button>
+
     <ul class="photocards">
       <li *ngFor="let photocard of photocards"
         [class.selected]="photocard === selectedphotocard"
         (click)="onSelect(photocard)">
-        <span class="badge">{{photocard.id}}</span> {{photocard.photoset}}
+        <span class="badge">{{photocard.id}}</span> {{photocard.photoset}}: {{photocard.members}}
       </li>
     </ul>
+</div>
     <my-photocard-detail [photocard]="selectedPhotocard"></my-photocard-detail>
     
     

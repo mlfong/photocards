@@ -1,0 +1,16 @@
+.title
+      {
+      width:769px; 
+      height: 65px;
+     margin:15px auto;
+      }
+.right_side 
+     {
+     float:right;
+     width:580px;
+     color: #000000;
+     background-color: #FFFFFF;
+     margin: 20px 0 20px 0;
+     padding: 0 0 25px 15px;
+     border:1px solid #CCCCCC;
+     }        

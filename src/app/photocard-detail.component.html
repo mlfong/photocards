@@ -1,9 +1,9 @@
-<div *ngIf="photocard">
-  <h2>{{photocard.photoset}} details!</h2>
-  <div><label>id: </label>{{photocard.id}}</div>
+<div *ngIf="photocard" class="right_side">
+  <h2>{{photocard.photoset}}: {{photocard.members}}</h2>
+  <!-- <div><label>id: </label>{{photocard.id}}</div> -->
   <div>
-    <label>photoset: {{photocard.photoset}}</label>
+    <!-- <label>photoset: {{photocard.photoset}}</label> -->
     <br />
-    <img src="{{photocard.url}}">
+      <img src="{{photocard.url}}" width="400px">
   </div>
 </div>
